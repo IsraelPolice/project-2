@@ -1,0 +1,127 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--keter-light-gray) 0%, var(--keter-gray) 100%);
+  padding: var(--spacing-lg);
+}
+
+.login-container {
+  background: var(--keter-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-2xl);
+  max-width: 450px;
+  width: 100%;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.login-logo {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, var(--keter-red) 0%, var(--keter-dark-red) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-md);
+}
+
+.login-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--keter-black);
+}
+
+.login-header p {
+  color: var(--keter-dark-gray);
+  font-size: 1rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--keter-black);
+}
+
+.form-group input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--keter-gray);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  border-color: var(--keter-red);
+}
+
+.login-btn {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  border-right: 4px solid #c62828;
+  font-size: 0.9rem;
+}
+
+.register-link {
+  text-align: center;
+  color: var(--keter-dark-gray);
+  font-size: 0.95rem;
+  margin-top: var(--spacing-sm);
+}
+
+.register-link a {
+  color: var(--keter-red);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: var(--spacing-lg);
+  }
+
+  .login-logo {
+    font-size: 2.5rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+}

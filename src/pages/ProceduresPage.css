@@ -1,0 +1,117 @@
+.procedures-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.procedures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.procedure-card {
+  cursor: pointer;
+  padding: var(--spacing-xl);
+  transition: all 0.3s;
+}
+
+.procedure-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.procedure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.procedure-header h3 {
+  flex: 1;
+  color: var(--keter-red);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.version-badge {
+  flex-shrink: 0;
+}
+
+.procedure-description {
+  color: var(--keter-dark-gray);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.procedure-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--keter-gray);
+}
+
+.date-text {
+  font-size: 0.9rem;
+  color: var(--keter-dark-gray);
+}
+
+.procedure-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.procedure-modal-header h2 {
+  flex: 1;
+  margin: 0;
+  color: var(--keter-red);
+}
+
+.modal-description {
+  font-size: 1.1rem;
+  color: var(--keter-dark-gray);
+  padding: var(--spacing-md);
+  background: var(--keter-light-gray);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-xl);
+  border-right: 4px solid var(--keter-red);
+}
+
+.procedure-content {
+  line-height: 1.8;
+  color: var(--keter-black);
+  margin: var(--spacing-xl) 0;
+}
+
+.procedure-content p {
+  margin-bottom: var(--spacing-md);
+}
+
+.procedure-meta {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--keter-gray);
+  color: var(--keter-dark-gray);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .procedures-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .procedure-header {
+    flex-direction: column;
+  }
+
+  .procedure-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+}

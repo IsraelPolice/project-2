@@ -1,0 +1,119 @@
+.scripts-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tag-filters {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+.tag-btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  background: var(--keter-white);
+  color: var(--keter-dark-gray);
+  border: 2px solid var(--keter-gray);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.tag-btn:hover {
+  border-color: var(--keter-red);
+  color: var(--keter-red);
+}
+
+.tag-btn.active {
+  background: var(--keter-red);
+  color: var(--keter-white);
+  border-color: var(--keter-red);
+}
+
+.scripts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.script-card {
+  cursor: pointer;
+  padding: var(--spacing-xl);
+  transition: all 0.3s;
+}
+
+.script-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.script-card h3 {
+  color: var(--keter-red);
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.script-scenario {
+  color: var(--keter-dark-gray);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  font-style: italic;
+}
+
+.script-tags {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.85rem;
+}
+
+.script-modal {
+  max-width: 900px;
+}
+
+.scenario-box {
+  background: var(--keter-light-gray);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  border-right: 4px solid var(--keter-red);
+  margin: var(--spacing-lg) 0;
+  font-size: 1.05rem;
+}
+
+.script-content {
+  background: var(--keter-white);
+  border: 2px solid var(--keter-gray);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.script-line {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+  color: var(--keter-black);
+}
+
+.script-line.role-line {
+  font-weight: 600;
+  color: var(--keter-red);
+  margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .scripts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tag-filters {
+    justify-content: flex-start;
+  }
+}
