@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // חשוב: הנתיב בריפו שלך
+  // חשוב ל-GitHub Pages:
   base: "/project-2/",
   server: {
     port: 5173,
